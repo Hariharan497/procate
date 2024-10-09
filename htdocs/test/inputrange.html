@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Range Input Example</title>
+</head>
+<body>
+  <input type="range" id="myRange" min="0" max="100" value="50">
+  <p>Value: <span id="rangeValue"></span></p>
+
+  <script>
+    const rangeInput = document.getElementById("myRange");
+    const rangeValue = document.getElementById("rangeValue");
+
+    rangeInput.addEventListener("input", function() {
+      rangeValue.textContent = this.value;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+nav {
+    display: flex;
+    background-color: #333333;
+    padding: 15px;
+}
+
+h1 {
+    width: 150px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+li {
+    float: left;
+    padding: 10px 30px 10px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+
+}
+
+li a,
+h1 {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+@media screen and (min-width: 650px) {
+    button {
+        display: none !important ;
+    }
+
+    ul {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    ul {
+        display: none;
+        width: 100%;
+        position: absolute !important;
+        top: 0px !important;
+        background-color: #333333;
+    }
+
+    li input:where([type="search"],[type="submit"]){
+        display: none;
+    }
+    button {
+        margin: 10px;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+
+    #menu-close {
+        display: none;
+    }
+
+    nav {
+        background-color: #333333;
+    }
+
+    li {
+        float: none ;
+        /* width: 100%; */
+    }
+
+    h1, li a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .active {
+        border-bottom: 2px solid white;
+        padding: 5px;
+    }
+
+    #menu-close {
+        height: 20px;
+        border: none;
+        color: white;
+        background-color: transparent;
+    }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    li {
+        padding: 7px 15px 7px ;
+        font-size: 1rem ;
+    }
+
+}

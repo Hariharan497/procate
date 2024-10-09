@@ -1,0 +1,156 @@
+.dropdowm{
+    position: absolute;
+    /* top:140%; */
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.collection:hover .dropdowm{
+    /* background-color: black; */
+    display: block !important;
+}
+
+#input-search {
+    background-color: transparent !important;
+}
+
+.img-overly:hover .hover-btn-container{
+    display: block !important;
+}
+
+.container-quick-view{
+    position: fixed;
+    top:50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    display: none;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .pop-overly{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgb(8, 8, 8);
+    opacity: 0.5;
+    display: none;
+ }
+#pop-close{
+    background-color: transparent;
+    transform: translateX(150%) !important;
+}
+
+.card-heading{
+    width:30%;
+    background-color: rgb(255, 217, 0);
+}
+
+.card-filter{
+    width:70%;
+}
+
+main{
+    /* position: fixed; */
+}
+.filters{
+    display: block ;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.items{
+    position: fixed;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+   
+}
+
+#filter-btn{
+    background-color: rgb(250, 169, 47);
+    font-weight: bold;
+    color:white;
+}
+
+.round{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(7, 7, 7);
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+.apply{
+    background-color: rgb(250, 169, 47);
+    color:white;
+}
+
+.reset{
+    background-color: rgb(255, 190, 104);
+    color:white;
+}
+
+.foot-link:hover{
+   color:white !important;
+}
+
+.subscribe{
+    background-color: aquamarine;
+}
+
+@media (max-width:768px){
+    .filters{
+        display: none;
+    }
+    .items{
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+    .items{
+        z-index: 0;
+    }
+
+    .filters{
+        /* display: block; */
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 75% !important;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: white;
+        z-index: 3;
+    }
+    #sort{
+        width: 75%;
+    }
+    .btn-filter-close{
+        display: block !important;
+    }
+}
+
+
+@media (max-width : 768px){
+    .card-heading{
+        width:100%;
+        /* background-color: yellow; */
+    }
+    .card-filter {
+        width : 100%;
+    }
+}

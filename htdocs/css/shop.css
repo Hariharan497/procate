@@ -1,0 +1,79 @@
+/* main{
+      
+}
+.filters{
+    display: block ;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.items{
+    position: fixed;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+   
+}
+
+#filter-btn{
+    background-color: rgb(250, 169, 47);
+    font-weight: bold;
+    color:white;
+}
+
+.round{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(7, 7, 7);
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+.apply{
+    background-color: rgb(250, 169, 47);
+    color:white;
+}
+
+.reset{
+    background-color: rgb(255, 190, 104);
+    color:white;
+}
+
+@media (max-width:768px){
+    .filters{
+        display: none;
+    }
+    .items{
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+    .items{
+        z-index: 0;
+    }
+
+    .filters{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 75% !important;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: white;
+        z-index: 3;
+    }
+    #sort{
+        width: 75%;
+    }
+    .btn-filter-close{
+        display: block !important;
+    }
+} */

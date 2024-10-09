@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden; /* Hide scrollbars */
+            border: 1px solid black;
+        }
+
+        .content {
+            height: 600px; /* Make content longer to enable scrolling */
+            background: linear-gradient(lightblue, lightgreen);
+        }
+    </style>
+    <title>Scroll Using JavaScript</title>
+</head>
+<body>
+
+    <div class="container" id="scrollContainer">
+        <div class="content">
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia et vel, ullam atque maxime praesentium cupiditate sunt quod quos illum dolores, corporis rem voluptatum iure id in a, nisi perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laborum illo, debitis et amet placeat eligendi tenetur libero nihil quas omnis tempore eveniet adipisci reprehenderit veniam quia praesentium eum laudantium.</p>
+        </div>
+    </div>
+
+    <button onclick="scrollDown()">Scroll Down</button>
+    <button onclick="scrollUp()">Scroll Up</button>
+
+    <script>
+        const container = document.getElementById('scrollContainer');
+
+        function scrollDown() {
+            container.scrollBy({
+                top: 100, // Scroll down by 100px
+                behavior: 'smooth' // Smooth scroll
+            });
+        }
+
+        function scrollUp() {
+            container.scrollBy({
+                top: -100, // Scroll up by 100px
+                behavior: 'smooth' // Smooth scroll
+            });
+        }
+    </script>
+
+</body>
+</html>
